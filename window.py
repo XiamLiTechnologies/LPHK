@@ -280,6 +280,8 @@ class Main_Window(tk.Frame):
                     self.button_mode = "swap"
                 elif self.button_mode == "swap":
                     self.button_mode = "copy"
+                elif self.button_mode == "copy":
+                    self.button_mode = "wipe"
                 else:
                     self.button_mode = "edit"  
                 self.draw_canvas()
@@ -289,6 +291,8 @@ class Main_Window(tk.Frame):
                     self.draw_canvas()
                     self.script_entry_window(column, row)
                     self.last_clicked = None
+                elif self.button_mode == "wipe":
+                    scripts.unbind(column, row)
                 else:
                     if self.last_clicked == None:
                         self.last_clicked = (column, row)

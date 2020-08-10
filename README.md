@@ -158,6 +158,9 @@ I have specifically chosen to do my best to develop this using as many cross pla
       * The selected button will remain unchanged.
       * The second button will have the selected button's old script and color bound to it.
         * If the second button is already bound, you will get a dialog box with options.
+    * "Wipe" mode: Click on a button to wipe it, without having a extra confirmation dialog.
+      * As there is no undo button, the change will be irreversible once you save the layout.
+        * As long as you don't save, you can still e.g. reload the layout to discard this change.
 * Go to `Layout > Save layout as...` to save your current layout for future use, colors and all.
 * Go to `Layout > Load layout...` to load an existing layout. Examples are in `user_layouts/examples/`.
 
